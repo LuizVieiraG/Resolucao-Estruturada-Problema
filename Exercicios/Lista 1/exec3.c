@@ -9,12 +9,48 @@
 //-código 4 : Oeste 			-código 11 : Noroeste
 
 void main(){
-	int i = 1, codigo;
+	int codigo;
 	
-	for(i = 1; i <= 10; i++){
 	printf("<<Origem de Produto>>");
 	printf("\nInforme o Codigo de Origem do Produto: ");
 	scanf("%d", &codigo);
-	}
+	
+	switch(codigo){
+		case 1:
+			printf("\nSul");
+		break;
+		case 2:
+			printf("\nNorte");
+		break;
+		case 3:
+			printf("\nLeste");
+		break;
+		case 4:
+			printf("\nOeste");
+		break;
+		case 5:
+			printf("\nNordeste");
+		break;
+		case 6:
+			printf("\nNordeste");
+		break;
+		case 7:
+			printf("\nSudeste");
+		break;
+		case 8:
+			printf("\nSudeste");
+		break;
+		case 9:
+			printf("\nSudeste");
+		break;
+		case 10:
+			printf("\nCentro Oeste");
+		break;		
+		case 11:
+			printf("\nNoroeste");
+		break;		
+		default:
+			printf("\nValor Invalido");		
+	}	
 }
 
