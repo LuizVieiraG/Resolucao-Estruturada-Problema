@@ -6,19 +6,17 @@
 
 float area_comp(float largura, float comprimento){
 	float area;
-	area = (largura * comprimento) / 2;
+	area = (largura * comprimento);
 	return area;
 }
 void main(){
-	float area, largura, comprimento, area_cont;
+	float area, largura, comprimento;
 	printf("<<Area>>\n");
 	printf("\nInforme Largura: ");
 	scanf("%f", &largura);
 	printf("\nInforme Comprimento: ");
 	scanf("%f", &comprimento);
-	area_cont = largura * comprimento;
 	area = area_comp(largura, comprimento);
-	printf("\nValor Total: %0.2f\n", area_cont);
 	printf("\nArea: %0.2f", area);
 	
 }
