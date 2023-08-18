@@ -17,8 +17,26 @@
 //Cada procedimento deverá ter suas leituras e processamentos correspondentes ao objetivo da opção 
 //escolhida.
 
-void calcular_idade(){
-	
+int calcular_idade(){
+	int aa, an, idade;
+	printf("Informe o Ano Atual: ");
+	scanf("%d", &aa);
+	printf("Informe o Ano de Nascimento: ");
+	scanf("%d", &an);
+	idade = aa - an;
+	return idade;	
+}
+float media(){
+	float nota1, nota2, nota3, media, cont;
+	printf("\nInforme Nota 1: ");
+	scanf("%f", &nota1);
+	printf("\nInforme Nota 2: ");
+	scanf("%f", &nota2);
+	printf("\nInforme Nota 3: ");
+	scanf("%f", &nota3);
+	cont = nota1 + nota2 + nota3;
+	media = cont / 
+	return media;
 }
 void menu(){
 	int opcao;
@@ -30,15 +48,15 @@ void menu(){
 		printf("\n3 - Maior Numero");
 		printf("\n4 - Menor Numero");
 		printf("\n5 - Sair");
-		prinf("\nInforme Opcao: ");
+		printf("\nInforme Opcao: ");
 		scanf("%d", &opcao);
 		
 		switch(opcao){
 			case 1:
-				calcular_idade();
+				printf("<<Sua Idade>>: %d", calcular_idade());
 				break;
 			case 2:
-				
+				printf("<<Media>>: %f", media());
 				break;
 			case 3:
 				
@@ -46,13 +64,18 @@ void menu(){
 			case 4:
 				
 				break;
+			case 5:
+				printf("Programa Finalizado\n");
+				break;	
 			default:
+				system("cls");
 				printf("\nOpcao Invalida!");
 		}
+		printf("\n\n");
+		system("pause");
 	}while(opcao != 5);
 }
 void main(){
 	menu();
 }
-
 
